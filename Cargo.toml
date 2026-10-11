@@ -1,0 +1,8 @@
+[package]
+name = "linux-iso-dl"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ratatui = "0.29"
+ureq = { version = "2", default-features = false, features = ["tls"] }

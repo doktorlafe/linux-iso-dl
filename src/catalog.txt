@@ -1,0 +1,154 @@
+# id | distribution | edition | source
+#
+# The source is a URL whose path segments may be patterns, resolved from the
+# server's directory listing with the newest match winning:
+#   *      anything
+#   #      a run of digits
+#   %      a version: digits and dots
+#   [abc]  one of the characters
+# or `scan <page> <pattern>`, which takes the newest link on the page whose
+# file name matches. `linux-iso-dl check` tries every entry.
+
+debian-netinst | Debian | stable, netinst | https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-#.#.#-amd64-netinst.iso
+debian-dvd | Debian | stable, DVD 1 | https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/debian-#.#.#-amd64-DVD-1.iso
+debian-live-gnome | Debian | stable, live GNOME | https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-#.#.#-amd64-gnome.iso
+debian-live-kde | Debian | stable, live KDE | https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-#.#.#-amd64-kde.iso
+debian-live-xfce | Debian | stable, live Xfce | https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-#.#.#-amd64-xfce.iso
+debian-live-cinnamon | Debian | stable, live Cinnamon | https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-#.#.#-amd64-cinnamon.iso
+debian-live-mate | Debian | stable, live MATE | https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-#.#.#-amd64-mate.iso
+debian-live-lxqt | Debian | stable, live LXQt | https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-#.#.#-amd64-lxqt.iso
+debian-live-lxde | Debian | stable, live LXDE | https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-#.#.#-amd64-lxde.iso
+debian-live-standard | Debian | stable, live bez grafiky | https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-#.#.#-amd64-standard.iso
+debian-netinst-arm64 | Debian | stable, netinst arm64 | https://cdimage.debian.org/debian-cd/current/arm64/iso-cd/debian-#.#.#-arm64-netinst.iso
+debian-testing-netinst | Debian | testing, netinst | https://cdimage.debian.org/cdimage/weekly-builds/amd64/iso-cd/debian-testing-amd64-netinst.iso
+debian-cloud | Debian | stable, cloud qcow2 | https://cloud.debian.org/images/cloud/trixie/latest/debian-#-genericcloud-amd64.qcow2
+devuan-netinstall | Devuan | netinstall | https://files.devuan.org/devuan_excalibur/installer-iso/devuan_excalibur_#.#.#_amd64_netinstall.iso
+devuan-desktop | Devuan | desktop | https://files.devuan.org/devuan_excalibur/installer-iso/devuan_excalibur_#.#.#_amd64_desktop.iso
+
+ubuntu-desktop | Ubuntu | Desktop, nejnovější | https://releases.ubuntu.com/#.#/ubuntu-%-desktop-amd64.iso
+ubuntu-desktop-lts | Ubuntu | Desktop, LTS | https://releases.ubuntu.com/2[02468].04/ubuntu-%-desktop-amd64.iso
+ubuntu-server | Ubuntu | Server, nejnovější | https://releases.ubuntu.com/#.#/ubuntu-%-live-server-amd64.iso
+ubuntu-server-lts | Ubuntu | Server, LTS | https://releases.ubuntu.com/2[02468].04/ubuntu-%-live-server-amd64.iso
+ubuntu-server-arm64 | Ubuntu | Server, LTS arm64 | https://cdimage.ubuntu.com/releases/2[02468].04/release/ubuntu-%-live-server-arm64.iso
+ubuntu-cloud | Ubuntu | LTS, cloud img | https://cloud-images.ubuntu.com/releases/2[02468].04/release/ubuntu-%-server-cloudimg-amd64.img
+kubuntu | Ubuntu | Kubuntu (KDE) | https://cdimage.ubuntu.com/kubuntu/releases/#.#/release/kubuntu-%-desktop-amd64.iso
+xubuntu | Ubuntu | Xubuntu (Xfce) | https://cdimage.ubuntu.com/xubuntu/releases/#.#/release/xubuntu-%-desktop-amd64.iso
+lubuntu | Ubuntu | Lubuntu (LXQt) | https://cdimage.ubuntu.com/lubuntu/releases/#.#/release/lubuntu-%-desktop-amd64.iso
+ubuntu-mate | Ubuntu | Ubuntu MATE | https://cdimage.ubuntu.com/ubuntu-mate/releases/#.#/release/ubuntu-mate-%-desktop-amd64.iso
+ubuntu-budgie | Ubuntu | Ubuntu Budgie | https://cdimage.ubuntu.com/ubuntu-budgie/releases/#.#/release/ubuntu-budgie-%-desktop-amd64.iso
+ubuntu-cinnamon | Ubuntu | Ubuntu Cinnamon | https://cdimage.ubuntu.com/ubuntucinnamon/releases/#.#/release/ubuntucinnamon-%-desktop-amd64.iso
+ubuntu-unity | Ubuntu | Ubuntu Unity | https://cdimage.ubuntu.com/ubuntu-unity/releases/#.#/release/ubuntu-unity-%-desktop-amd64.iso
+ubuntu-studio | Ubuntu | Ubuntu Studio | https://cdimage.ubuntu.com/ubuntustudio/releases/#.#/release/ubuntustudio-%-desktop-amd64.iso
+edubuntu | Ubuntu | Edubuntu | https://cdimage.ubuntu.com/edubuntu/releases/#.#/release/edubuntu-%-desktop-amd64.iso
+ubuntu-kylin | Ubuntu | Ubuntu Kylin | https://cdimage.ubuntu.com/ubuntukylin/releases/#.#/release/ubuntukylin-%-desktop-amd64.iso
+
+mint-cinnamon | Linux Mint | Cinnamon | https://mirrors.kernel.org/linuxmint/stable/%/linuxmint-%-cinnamon-64bit.iso
+mint-mate | Linux Mint | MATE | https://mirrors.kernel.org/linuxmint/stable/%/linuxmint-%-mate-64bit.iso
+mint-xfce | Linux Mint | Xfce | https://mirrors.kernel.org/linuxmint/stable/%/linuxmint-%-xfce-64bit.iso
+lmde | Linux Mint | LMDE (základ Debian) | https://mirrors.kernel.org/linuxmint/debian/lmde-#-cinnamon-64bit.iso
+pop-os | Pop!_OS | Intel/AMD | scan https://api.pop-os.org/builds/24.04/intel pop-os_*.iso
+pop-os-nvidia | Pop!_OS | NVIDIA | scan https://api.pop-os.org/builds/24.04/nvidia pop-os_*.iso
+kde-neon | KDE neon | desktop | https://files.kde.org/neon/images/desktop/current/neon-desktop-#-#.iso
+zorin-core | Zorin OS | Core | https://mirrors.edge.kernel.org/zorinos-isos/#/Zorin-OS-*-Core-64-bit*.iso
+elementary | elementary OS | stable | scan https://elementary.io/ elementaryos-%-stable-amd64.#.iso
+mx-xfce | MX Linux | Xfce | https://mirror.math.princeton.edu/pub/mxlinux-iso/MX/Final/Xfce/MX-%_Xfce_x64.iso
+mx-kde | MX Linux | KDE | https://mirror.math.princeton.edu/pub/mxlinux-iso/MX/Final/KDE/MX-%_KDE_x64.iso
+antix | antiX | full | https://mirror.math.princeton.edu/pub/mxlinux-iso/ANTIX/Final/antiX-%/antiX-%_x64-full.iso
+
+fedora-workstation | Fedora | Workstation (GNOME) | https://dl.fedoraproject.org/pub/fedora/linux/releases/#/Workstation/x86_64/iso/Fedora-Workstation-Live-*.iso
+fedora-kde | Fedora | KDE Plasma Desktop | https://dl.fedoraproject.org/pub/fedora/linux/releases/#/KDE/x86_64/iso/Fedora-KDE-Desktop-Live-*.iso
+fedora-server | Fedora | Server, DVD | https://dl.fedoraproject.org/pub/fedora/linux/releases/#/Server/x86_64/iso/Fedora-Server-dvd-*.iso
+fedora-server-netinst | Fedora | Server, netinst | https://dl.fedoraproject.org/pub/fedora/linux/releases/#/Server/x86_64/iso/Fedora-Server-netinst-*.iso
+fedora-everything | Fedora | Everything, netinst | https://dl.fedoraproject.org/pub/fedora/linux/releases/#/Everything/x86_64/iso/Fedora-Everything-netinst-*.iso
+fedora-silverblue | Fedora | Silverblue | https://dl.fedoraproject.org/pub/fedora/linux/releases/#/Silverblue/x86_64/iso/Fedora-Silverblue-ostree-*.iso
+fedora-kinoite | Fedora | Kinoite | https://dl.fedoraproject.org/pub/fedora/linux/releases/#/Kinoite/x86_64/iso/Fedora-Kinoite-ostree-*.iso
+fedora-xfce | Fedora | Xfce | https://dl.fedoraproject.org/pub/fedora/linux/releases/#/Spins/x86_64/iso/Fedora-Xfce-Live-*.iso
+fedora-cinnamon | Fedora | Cinnamon | https://dl.fedoraproject.org/pub/fedora/linux/releases/#/Spins/x86_64/iso/Fedora-Cinnamon-Live-*.iso
+fedora-mate | Fedora | MATE | https://dl.fedoraproject.org/pub/fedora/linux/releases/#/Spins/x86_64/iso/Fedora-MATE_Compiz-Live-*.iso
+fedora-lxqt | Fedora | LXQt | https://dl.fedoraproject.org/pub/fedora/linux/releases/#/Spins/x86_64/iso/Fedora-LXQt-Live-*.iso
+fedora-budgie | Fedora | Budgie | https://dl.fedoraproject.org/pub/fedora/linux/releases/#/Spins/x86_64/iso/Fedora-Budgie-Live-*.iso
+fedora-sway | Fedora | Sway | https://dl.fedoraproject.org/pub/fedora/linux/releases/#/Spins/x86_64/iso/Fedora-Sway-Live-*.iso
+fedora-i3 | Fedora | i3 | https://dl.fedoraproject.org/pub/fedora/linux/releases/#/Spins/x86_64/iso/Fedora-i3-Live-*.iso
+fedora-cosmic | Fedora | COSMIC | https://dl.fedoraproject.org/pub/fedora/linux/releases/#/Spins/x86_64/iso/Fedora-COSMIC-Live-*.iso
+fedora-workstation-arm64 | Fedora | Workstation arm64 | https://dl.fedoraproject.org/pub/fedora/linux/releases/#/Workstation/aarch64/iso/Fedora-Workstation-Live-*.iso
+fedora-cloud | Fedora | cloud qcow2 | https://dl.fedoraproject.org/pub/fedora/linux/releases/#/Cloud/x86_64/images/Fedora-Cloud-Base-Generic-*.qcow2
+bazzite | Bazzite | stable | https://download.bazzite.gg/bazzite-stable-amd64.iso
+nobara | Nobara | Official | scan https://nobaraproject.org/download.html Nobara-*-Official-20*.iso
+
+rocky-minimal | Rocky Linux | minimal | https://dl.rockylinux.org/pub/rocky/#/isos/x86_64/Rocky-#-latest-x86_64-minimal.iso
+rocky-dvd | Rocky Linux | DVD | https://dl.rockylinux.org/pub/rocky/#/isos/x86_64/Rocky-#-latest-x86_64-dvd.iso
+rocky-boot | Rocky Linux | boot (netinst) | https://dl.rockylinux.org/pub/rocky/#/isos/x86_64/Rocky-#-latest-x86_64-boot.iso
+rocky-cloud | Rocky Linux | cloud qcow2 | https://dl.rockylinux.org/pub/rocky/#/images/x86_64/Rocky-#-GenericCloud-Base.latest.x86_64.qcow2
+alma-minimal | AlmaLinux | minimal | https://repo.almalinux.org/almalinux/#/isos/x86_64/AlmaLinux-#-latest-x86_64-minimal.iso
+alma-dvd | AlmaLinux | DVD | https://repo.almalinux.org/almalinux/#/isos/x86_64/AlmaLinux-#-latest-x86_64-dvd.iso
+alma-boot | AlmaLinux | boot (netinst) | https://repo.almalinux.org/almalinux/#/isos/x86_64/AlmaLinux-#-latest-x86_64-boot.iso
+alma-cloud | AlmaLinux | cloud qcow2 | https://repo.almalinux.org/almalinux/#/cloud/x86_64/images/AlmaLinux-#-GenericCloud-latest.x86_64.qcow2
+centos-stream-dvd | CentOS Stream | DVD | https://mirror.stream.centos.org/#-stream/BaseOS/x86_64/iso/CentOS-Stream-#-latest-x86_64-dvd1.iso
+centos-stream-boot | CentOS Stream | boot (netinst) | https://mirror.stream.centos.org/#-stream/BaseOS/x86_64/iso/CentOS-Stream-#-latest-x86_64-boot.iso
+oracle-dvd | Oracle Linux | DVD | scan https://yum.oracle.com/oracle-linux-isos.html OracleLinux-R#-U#-x86_64-dvd.iso
+oracle-boot | Oracle Linux | boot (netinst) | scan https://yum.oracle.com/oracle-linux-isos.html OracleLinux-R#-U#-x86_64-boot.iso
+
+opensuse-tumbleweed | openSUSE | Tumbleweed, DVD | https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso
+opensuse-tumbleweed-net | openSUSE | Tumbleweed, netinst | https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-NET-x86_64-Current.iso
+opensuse-tumbleweed-kde | openSUSE | Tumbleweed, live KDE | https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso
+opensuse-tumbleweed-gnome | openSUSE | Tumbleweed, live GNOME | https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso
+opensuse-leap | openSUSE | Leap | https://download.opensuse.org/distribution/leap/#.#/offline/Leap-#.#-offline-installer-x86_64.install.iso
+opensuse-leap-net | openSUSE | Leap, netinst | https://download.opensuse.org/distribution/leap/#.#/installer/iso/agama-installer.x86_64-Leap_#.#.iso
+opensuse-microos | openSUSE | MicroOS | https://download.opensuse.org/tumbleweed/iso/openSUSE-MicroOS-DVD-x86_64-Current.iso
+
+arch | Arch Linux | install | https://mirrors.kernel.org/archlinux/iso/latest/archlinux-x86_64.iso
+arch-cloud | Arch Linux | cloud qcow2 | https://mirrors.kernel.org/archlinux/images/latest/Arch-Linux-x86_64-cloudimg.qcow2
+manjaro-kde | Manjaro | KDE Plasma | scan https://manjaro.org/products/download/x86 manjaro-kde-%-#-linux#.iso
+manjaro-gnome | Manjaro | GNOME | scan https://manjaro.org/products/download/x86 manjaro-gnome-%-#-linux#.iso
+manjaro-xfce | Manjaro | Xfce | scan https://manjaro.org/products/download/x86 manjaro-xfce-%-#-linux#.iso
+endeavouros | EndeavourOS | live | https://mirror.alpix.eu/endeavouros/iso/EndeavourOS_*.iso
+cachyos | CachyOS | desktop | https://mirror.cachyos.org/ISO/desktop/#/cachyos-desktop-linux-#.iso
+blackarch-full | BlackArch | full | https://ftp.halifax.rwth-aachen.de/blackarch/iso/blackarch-linux-full-*-x86_64.iso
+blackarch-slim | BlackArch | slim | https://ftp.halifax.rwth-aachen.de/blackarch/iso/blackarch-linux-slim-*-x86_64.iso
+
+alpine-standard | Alpine | standard | https://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/x86_64/alpine-standard-#.#.#-x86_64.iso
+alpine-extended | Alpine | extended | https://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/x86_64/alpine-extended-#.#.#-x86_64.iso
+alpine-virt | Alpine | virt | https://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/x86_64/alpine-virt-#.#.#-x86_64.iso
+alpine-standard-arm64 | Alpine | standard arm64 | https://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/aarch64/alpine-standard-#.#.#-aarch64.iso
+void-base | Void Linux | base, glibc | https://repo-default.voidlinux.org/live/current/void-live-x86_64-#-base.iso
+void-xfce | Void Linux | Xfce, glibc | https://repo-default.voidlinux.org/live/current/void-live-x86_64-#-xfce.iso
+void-base-musl | Void Linux | base, musl | https://repo-default.voidlinux.org/live/current/void-live-x86_64-musl-#-base.iso
+void-xfce-musl | Void Linux | Xfce, musl | https://repo-default.voidlinux.org/live/current/void-live-x86_64-musl-#-xfce.iso
+gentoo-minimal | Gentoo | minimal install | https://distfiles.gentoo.org/releases/amd64/autobuilds/current-install-amd64-minimal/install-amd64-minimal-*.iso
+gentoo-livegui | Gentoo | live GUI | https://distfiles.gentoo.org/releases/amd64/autobuilds/current-livegui-amd64/livegui-amd64-*.iso
+nixos-graphical | NixOS | stable, grafický | scan https://nixos.org/download/ latest-nixos-graphical-x86_64-linux.iso
+nixos-minimal | NixOS | stable, minimal | scan https://nixos.org/download/ latest-nixos-minimal-x86_64-linux.iso
+nixos-unstable-minimal | NixOS | unstable, minimal | https://channels.nixos.org/nixos-unstable/latest-nixos-minimal-x86_64-linux.iso
+slackware | Slackware | install DVD | https://mirrors.slackware.com/slackware/slackware-iso/slackware64-#.#-iso/slackware64-#.#-install-dvd.iso
+solus-budgie | Solus | Budgie | https://downloads.getsol.us/isos/#-#-#/Solus-Budgie-Release-#-#-#.iso
+solus-gnome | Solus | GNOME | https://downloads.getsol.us/isos/#-#-#/Solus-GNOME-Release-#-#-#.iso
+solus-plasma | Solus | Plasma | https://downloads.getsol.us/isos/#-#-#/Solus-Plasma-Release-#-#-#.iso
+tinycore | Tiny Core | TinyCore | scan http://tinycorelinux.net/downloads.html TinyCore-current.iso
+tinycore-plus | Tiny Core | CorePlus | scan http://tinycorelinux.net/downloads.html CorePlus-current.iso
+puppy | Puppy Linux | BookwormPup64 | https://distro.ibiblio.org/puppylinux/puppy-bookwormpup/BookwormPup64/#.#.#/BookwormPup64_#.#.#.iso
+
+kali-installer | Kali Linux | installer | https://cdimage.kali.org/current/kali-linux-*-installer-amd64.iso
+kali-netinst | Kali Linux | installer, netinst | https://cdimage.kali.org/current/kali-linux-*-installer-netinst-amd64.iso
+parrot-security | Parrot OS | Security | https://deb.parrot.sh/parrot/iso/%/Parrot-security-%_amd64.iso
+parrot-home | Parrot OS | Home | https://deb.parrot.sh/parrot/iso/%/Parrot-home-%_amd64.iso
+tails | Tails | USB obraz | https://download.tails.net/tails/stable/tails-amd64-*/tails-amd64-*.img
+tails-iso | Tails | ISO | https://download.tails.net/tails/stable/tails-amd64-*/tails-amd64-*.iso
+qubes | Qubes OS | stable | https://ftp.qubes-os.org/iso/Qubes-R#.#.#-x86_64.iso
+
+proxmox-ve | Proxmox | Virtual Environment | https://enterprise.proxmox.com/iso/proxmox-ve_#.#-#.iso
+proxmox-backup | Proxmox | Backup Server | https://enterprise.proxmox.com/iso/proxmox-backup-server_#.#-#.iso
+proxmox-mail | Proxmox | Mail Gateway | https://enterprise.proxmox.com/iso/proxmox-mail-gateway_#.#-#.iso
+truenas | TrueNAS | Community Edition | scan https://www.truenas.com/download-truenas-community-edition/ TrueNAS-SCALE-*.iso
+openmediavault | openmediavault | stable | scan https://www.openmediavault.org/download.html openmediavault_%-amd64.iso
+talos | Talos Linux | metal | scan https://api.github.com/repos/siderolabs/talos/releases/latest metal-amd64.iso
+flatcar | Flatcar | stable | https://stable.release.flatcar-linux.net/amd64-usr/current/flatcar_production_iso_image.iso
+libreelec | LibreELEC | Generic x86_64 | scan https://libreelec.tv/downloads/generic/ LibreELEC-Generic.x86_64-#.#.#.img.gz
+
+systemrescue | SystemRescue | live | scan https://www.system-rescue.org/Download/ systemrescue-#.#-amd64.iso
+rescuezilla | Rescuezilla | live | scan https://api.github.com/repos/rescuezilla/rescuezilla/releases/latest rescuezilla-*-64bit.*.iso
+gparted | GParted | live | scan https://gparted.org/download.php gparted-live-*-amd64.iso
+finnix | Finnix | live | https://www.finnix.org/releases/current/finnix-#.iso
+
+raspios | Raspberry Pi OS | desktop, arm64 | https://downloads.raspberrypi.com/raspios_arm64/images/raspios_arm64-*/*-arm64.img.xz
+raspios-lite | Raspberry Pi OS | Lite, arm64 | https://downloads.raspberrypi.com/raspios_lite_arm64/images/raspios_lite_arm64-*/*-arm64-lite.img.xz
+raspios-full | Raspberry Pi OS | full, arm64 | https://downloads.raspberrypi.com/raspios_full_arm64/images/raspios_full_arm64-*/*-arm64-full.img.xz
